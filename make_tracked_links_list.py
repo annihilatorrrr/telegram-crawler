@@ -188,19 +188,10 @@ def should_exclude(url: str) -> bool:
     allow_rules = domain_rules.get('allow', set())
     deny_rules = domain_rules.get('deny', set())
 
-    exclude = False
-
-    for regex in deny_rules:
-        if re.search(regex, url):
-            exclude = True
-            break
-
-    for regex in allow_rules:
-        if re.search(regex, url):
-            exclude = False
-            break
-
-    return exclude
+    return next(
+        (False for regex in allow_rules if re.search(regex, url)),
+        any(re.search(regex, url) for regex in deny_rules),
+    )
 
 
 def find_absolute_links(html: str) -> set[str]:
@@ -284,11 +275,10 @@ def cleanup_links(links: set[str]) -> set[str]:
 
 
 def _is_x_content_type(content_types_set: set[str], content_type) -> bool:
-    for match_content_type in content_types_set:
-        if match_content_type in content_type:
-            return True
-
-    return False
+    return any(
+        match_content_type in content_type
+        for match_content_type in content_types_set
+    )
 
 
 def is_textable_content_type(content_type: str) -> bool:
@@ -410,7 +400,7 @@ if __name__ == '__main__':
         OLD_URL_LIST = set()
         for filename in (OUTPUT_FILENAME, OUTPUT_RESOURCES_FILENAME):
             with open(filename, 'r') as f:
-                OLD_URL_LIST |= set([l.replace('\n', '') for l in f.readlines()])
+                OLD_URL_LIST |= {l.replace('\n', '') for l in f.readlines()}
 
         CURRENT_URL_LIST = LINKS_TO_TRACK | LINKS_TO_TRACKABLE_RESOURCES
 

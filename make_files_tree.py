@@ -467,11 +467,10 @@ def is_hashable_only_content_type(content_type) -> bool:
         'application/zip',
     )
 
-    for hashable_only_content_type in hashable_only_content_types:
-        if hashable_only_content_type in content_type:
-            return True
-
-    return False
+    return any(
+        hashable_only_content_type in content_type
+        for hashable_only_content_type in hashable_only_content_types
+    )
 
 
 class RetryError(Exception):
@@ -548,14 +547,14 @@ async def _crawl(url: str, session: aiohttp.ClientSession, output_dir: str):
 
 async def crawl_web(session: aiohttp.ClientSession):
     with open(INPUT_FILENAME, 'r') as f:
-        tracked_urls = set([l.replace('\n', '') for l in f.readlines()])
+        tracked_urls = {l.replace('\n', '') for l in f.readlines()}
 
     await asyncio.gather(*[crawl(url, session) for url in tracked_urls])
 
 
 async def crawl_web_res(session: aiohttp.ClientSession):
     with open(INPUT_RES_FILENAME, 'r') as f:
-        tracked_urls = set([l.replace('\n', '') for l in f.readlines()])
+        tracked_urls = {l.replace('\n', '') for l in f.readlines()}
 
     await asyncio.gather(*[crawl(url, session, OUTPUT_RESOURCES_FOLDER) for url in tracked_urls])
 
@@ -587,11 +586,8 @@ async def start(mode: str):
 
 
 if __name__ == '__main__':
-    run_mode = 'all'
-    if 'MODE' in os.environ:
-        run_mode = os.environ['MODE']
-
+    run_mode = os.environ['MODE'] if 'MODE' in os.environ else 'all'
     start_time = time()
-    logger.info(f'Start crawling content of tracked urls...')
+    logger.info('Start crawling content of tracked urls...')
     asyncio.get_event_loop().run_until_complete(start(run_mode))
     logger.info(f'Stop crawling content in mode {run_mode}. {time() - start_time} sec.')

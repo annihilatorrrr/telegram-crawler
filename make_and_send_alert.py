@@ -87,8 +87,7 @@ async def send_req_until_success(session: aiohttp.ClientSession, **kwargs) -> Tu
         json = await res.json()
 
         pagination_data = res.headers.get('Link', '')
-        matches = re.findall(LAST_PAGE_NUMBER_REGEX, pagination_data)
-        if matches:
+        if matches := re.findall(LAST_PAGE_NUMBER_REGEX, pagination_data):
             last_page_number = int(matches[0])
 
         return json, last_page_number
@@ -107,17 +106,16 @@ async def main() -> None:
         )
         commit_files = commit_data['files']
 
-        coroutine_list = list()
-        for current_page in range(2, last_page + 1):
-            coroutine_list.append(send_req_until_success(
+        coroutine_list = [
+            send_req_until_success(
                 session=session,
                 url=f'{BASE_GITHUB_API}{GITHUB_LAST_COMMITS}?page={current_page}'.format(
                     repo=REPOSITORY, sha=COMMIT_SHA
                 ),
-                headers={
-                    'Authorization': f'token {GITHUB_PAT}'
-                }
-            ))
+                headers={'Authorization': f'token {GITHUB_PAT}'},
+            )
+            for current_page in range(2, last_page + 1)
+        ]
 
         paginated_responses = await asyncio.gather(*coroutine_list)
         for json_response, _ in paginated_responses:
@@ -150,7 +148,7 @@ async def main() -> None:
             status = STATUS_TO_EMOJI[file['status']]
             changes[file['status']].append(f'{status} <code>{changed_url}</code>')
 
-        for i, [status, text_list] in enumerate(changes.items()):
+        for [status, text_list] in changes.items():
             if not text_list:
                 continue
 
