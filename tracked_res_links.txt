@@ -211,9 +211,11 @@ core.telegram.org/img/favicon-32x32.png
 core.telegram.org/img/favicon.ico
 core.telegram.org/img/passport_processing.gif
 core.telegram.org/img/website_icon.svg
+core.telegram.org/resources/link-issue.zip
 core.telegram.org/resources/video/DogWhat.mp4
 core.telegram.org/resources/video/DogWhat.webm
 core.telegram.org/resources/video/Music.mp4
+core.telegram.org/tdlib/tdlib.zip
 corefork.telegram.org/file/464001083/105cd/NF4ViAHfTJc.3601652.mp4/0fd787953c11a6371d
 corefork.telegram.org/file/464001085/2/E4hNXSNQimQ.2503/bf6ffcab3cb3afd43d
 corefork.telegram.org/file/464001127/10a99/GC0dSHYQTb0.3621529.mp4/75439f14147e13b6fb
