@@ -4915,6 +4915,7 @@ corefork.telegram.org/api/bots/info
 corefork.telegram.org/api/bots/inline
 corefork.telegram.org/api/bots/menu
 corefork.telegram.org/api/bots/webapps
+corefork.telegram.org/api/business
 corefork.telegram.org/api/channel
 corefork.telegram.org/api/colors
 corefork.telegram.org/api/config
@@ -7662,6 +7663,7 @@ telegram.org/blog/live-streams-forwarding-next-channel
 telegram.org/blog/login
 telegram.org/blog/masks
 telegram.org/blog/message-effects-and-more
+telegram.org/blog/mini-app-bar-paid-media-and-more
 telegram.org/blog/moar-stickers
 telegram.org/blog/monetization-for-channels
 telegram.org/blog/move-history
