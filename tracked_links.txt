@@ -7548,8 +7548,6 @@ corefork.telegram.org/constructor/updateChannelAvailableMessages
 corefork.telegram.org/constructor/updateChannelMessageForwards
 corefork.telegram.org/constructor/updateChannelMessageViews
 corefork.telegram.org/constructor/updateChannelParticipant
-corefork.telegram.org/constructor/updateChannelPinnedTopic
-corefork.telegram.org/constructor/updateChannelPinnedTopics
 corefork.telegram.org/constructor/updateChannelReadMessagesContents
 corefork.telegram.org/constructor/updateChannelTooLong
 corefork.telegram.org/constructor/updateChannelUserTyping
@@ -7744,7 +7742,7 @@ corefork.telegram.org/css/core-widgets.css
 corefork.telegram.org/css/telegram-extra.css
 corefork.telegram.org/css/telegram.css
 corefork.telegram.org/file/400780400111/3/RF-b0LDHWpc.202549.json/9b83afb26f1ba2f8aa
-corefork.telegram.org/file/400780400144/2/mlv9mRNls2U.48241.json/691277fc060cec57d1
+corefork.telegram.org/file/400780400532/6/qqW1CLlBRi8.48390.json/289ebdb75cc55bddd1
 corefork.telegram.org/gateway
 corefork.telegram.org/getProxyConfig
 corefork.telegram.org/import-stickers
