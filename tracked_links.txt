@@ -7144,7 +7144,6 @@ corefork.telegram.org/constructor/paymentCharge
 corefork.telegram.org/constructor/paymentFormMethod
 corefork.telegram.org/constructor/paymentRequestedInfo
 corefork.telegram.org/constructor/paymentSavedCredentialsCard
-corefork.telegram.org/constructor/payments.ValidatedRequestedInfo
 corefork.telegram.org/constructor/payments.bankCardData
 corefork.telegram.org/constructor/payments.checkCanSendGiftResultFail
 corefork.telegram.org/constructor/payments.checkCanSendGiftResultOk
