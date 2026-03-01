@@ -9211,6 +9211,10 @@ macos.telegram.org
 macos.telegram.org/css/bootstrap.min.css
 macos.telegram.org/css/telegram.css
 macos.telegram.org/js/main.js
+oauth.telegram.org/.well-known/jwks.json
+oauth.telegram.org/.well-known/openid-configuration
+oauth.telegram.org/js/telegram-login.js
+oauth.telegram.org/token
 osx.telegram.org/updates/versions.xml
 raw.githubusercontent.com/tdlib/td/master/td/generate/scheme/secret_api.tl
 raw.githubusercontent.com/tdlib/td/master/td/generate/scheme/td_api.tl
