@@ -7741,7 +7741,7 @@ corefork.telegram.org/css/core-widgets.css
 corefork.telegram.org/css/telegram-extra.css
 corefork.telegram.org/css/telegram.css
 corefork.telegram.org/file/400780400595/4/HsbGg_CLwoA.209033.json/b017bd1b7b65ae7547
-corefork.telegram.org/file/400780400699/3/k1SEeTL6NK4.48386.json/ca61db6357be9ac436
+corefork.telegram.org/file/400780400814/2/P_yUt37ncsw.48386.json/dcdb55ebc7501fb32b
 corefork.telegram.org/gateway
 corefork.telegram.org/getProxyConfig
 corefork.telegram.org/import-stickers
