@@ -7740,8 +7740,8 @@ corefork.telegram.org/css/bootstrap.min.css
 corefork.telegram.org/css/core-widgets.css
 corefork.telegram.org/css/telegram-extra.css
 corefork.telegram.org/css/telegram.css
-corefork.telegram.org/file/400780400236/3/4dcMeVPiPVw.48386.json/bb042ab7e845eb4a57
 corefork.telegram.org/file/400780400595/4/HsbGg_CLwoA.209033.json/b017bd1b7b65ae7547
+corefork.telegram.org/file/400780400731/1/uZWNmmTB4BY.48386.json/8503d0d498788600bf
 corefork.telegram.org/gateway
 corefork.telegram.org/getProxyConfig
 corefork.telegram.org/import-stickers
