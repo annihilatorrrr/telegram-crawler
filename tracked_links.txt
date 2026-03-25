@@ -8072,7 +8072,6 @@ corefork.telegram.org/method/help.hidePromoData
 corefork.telegram.org/method/help.saveAppLog
 corefork.telegram.org/method/help.setBotUpdatesStatus
 corefork.telegram.org/method/initConnection
-corefork.telegram.org/method/inputPhoneContact
 corefork.telegram.org/method/invokeAfterMsg
 corefork.telegram.org/method/invokeAfterMsgs
 corefork.telegram.org/method/invokeWithApnsSecret
@@ -8524,7 +8523,6 @@ corefork.telegram.org/method/upload.getWebFile
 corefork.telegram.org/method/upload.reuploadCdnFile
 corefork.telegram.org/method/upload.saveBigFilePart
 corefork.telegram.org/method/upload.saveFilePart
-corefork.telegram.org/method/userFull
 corefork.telegram.org/method/users.getFullUser
 corefork.telegram.org/method/users.getRequirementsToContact
 corefork.telegram.org/method/users.getSavedMusic
