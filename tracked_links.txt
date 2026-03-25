@@ -7947,17 +7947,14 @@ corefork.telegram.org/method/channels.checkUsername
 corefork.telegram.org/method/channels.clickSponsoredMessage
 corefork.telegram.org/method/channels.convertToGigagroup
 corefork.telegram.org/method/channels.createChannel
-corefork.telegram.org/method/channels.createForumTopic
 corefork.telegram.org/method/channels.deactivateAllUsernames
 corefork.telegram.org/method/channels.deleteChannel
 corefork.telegram.org/method/channels.deleteHistory
 corefork.telegram.org/method/channels.deleteMessages
 corefork.telegram.org/method/channels.deleteParticipantHistory
-corefork.telegram.org/method/channels.deleteTopicHistory
 corefork.telegram.org/method/channels.editAdmin
 corefork.telegram.org/method/channels.editBanned
 corefork.telegram.org/method/channels.editCreator
-corefork.telegram.org/method/channels.editForumTopic
 corefork.telegram.org/method/channels.editLocation
 corefork.telegram.org/method/channels.editPhoto
 corefork.telegram.org/method/channels.editTitle
@@ -7983,7 +7980,6 @@ corefork.telegram.org/method/channels.joinChannel
 corefork.telegram.org/method/channels.leaveChannel
 corefork.telegram.org/method/channels.readHistory
 corefork.telegram.org/method/channels.readMessageContents
-corefork.telegram.org/method/channels.reorderPinnedForumTopics
 corefork.telegram.org/method/channels.reorderUsernames
 corefork.telegram.org/method/channels.reportAntiSpamFalsePositive
 corefork.telegram.org/method/channels.reportSpam
@@ -8008,7 +8004,6 @@ corefork.telegram.org/method/channels.toggleViewForumAsMessages
 corefork.telegram.org/method/channels.updateColor
 corefork.telegram.org/method/channels.updateEmojiStatus
 corefork.telegram.org/method/channels.updatePaidMessagesPrice
-corefork.telegram.org/method/channels.updatePinnedForumTopic
 corefork.telegram.org/method/channels.updateUsername
 corefork.telegram.org/method/chatlists.checkChatlistInvite
 corefork.telegram.org/method/chatlists.deleteExportedInvite
