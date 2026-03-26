@@ -7954,7 +7954,6 @@ corefork.telegram.org/method/channels.deleteMessages
 corefork.telegram.org/method/channels.deleteParticipantHistory
 corefork.telegram.org/method/channels.editAdmin
 corefork.telegram.org/method/channels.editBanned
-corefork.telegram.org/method/channels.editCreator
 corefork.telegram.org/method/channels.editLocation
 corefork.telegram.org/method/channels.editPhoto
 corefork.telegram.org/method/channels.editTitle
