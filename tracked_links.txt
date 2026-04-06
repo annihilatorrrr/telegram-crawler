@@ -8530,7 +8530,6 @@ corefork.telegram.org/method/users.getUsers
 corefork.telegram.org/method/users.setSecureValueErrors
 corefork.telegram.org/method/users.suggestBirthday
 corefork.telegram.org/methods
-corefork.telegram.org/methood/payments.getSavedStarGifts
 corefork.telegram.org/mtproto
 corefork.telegram.org/mtproto/TL
 corefork.telegram.org/mtproto/TL-abstract-types
