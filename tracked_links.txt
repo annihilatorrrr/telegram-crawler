@@ -6048,6 +6048,7 @@ corefork.telegram.org/api/auth
 corefork.telegram.org/api/block
 corefork.telegram.org/api/boost
 corefork.telegram.org/api/bots
+corefork.telegram.org/api/bots/ai
 corefork.telegram.org/api/bots/attach
 corefork.telegram.org/api/bots/buttons
 corefork.telegram.org/api/bots/commands
