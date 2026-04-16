@@ -6294,8 +6294,10 @@ corefork.telegram.org/constructor/botPreviewMedia
 corefork.telegram.org/constructor/botVerification
 corefork.telegram.org/constructor/botVerifierSettings
 corefork.telegram.org/constructor/bots.botInfo
+corefork.telegram.org/constructor/bots.exportedBotToken
 corefork.telegram.org/constructor/bots.popularAppBots
 corefork.telegram.org/constructor/bots.previewInfo
+corefork.telegram.org/constructor/bots.requestedButton
 corefork.telegram.org/constructor/broadcastRevenueBalances
 corefork.telegram.org/constructor/businessAwayMessage
 corefork.telegram.org/constructor/businessAwayMessageScheduleAlways
@@ -6700,6 +6702,7 @@ corefork.telegram.org/constructor/inputMessageCallbackQuery
 corefork.telegram.org/constructor/inputMessageEntityMentionName
 corefork.telegram.org/constructor/inputMessageID
 corefork.telegram.org/constructor/inputMessagePinned
+corefork.telegram.org/constructor/inputMessageReadMetric
 corefork.telegram.org/constructor/inputMessageReplyTo
 corefork.telegram.org/constructor/inputMessagesFilterChatPhotos
 corefork.telegram.org/constructor/inputMessagesFilterContacts
@@ -6713,6 +6716,7 @@ corefork.telegram.org/constructor/inputMessagesFilterPhoneCalls
 corefork.telegram.org/constructor/inputMessagesFilterPhotoVideo
 corefork.telegram.org/constructor/inputMessagesFilterPhotos
 corefork.telegram.org/constructor/inputMessagesFilterPinned
+corefork.telegram.org/constructor/inputMessagesFilterPoll
 corefork.telegram.org/constructor/inputMessagesFilterRoundVideo
 corefork.telegram.org/constructor/inputMessagesFilterRoundVoice
 corefork.telegram.org/constructor/inputMessagesFilterUrl
@@ -6747,6 +6751,7 @@ corefork.telegram.org/constructor/inputPhoto
 corefork.telegram.org/constructor/inputPhotoEmpty
 corefork.telegram.org/constructor/inputPhotoFileLocation
 corefork.telegram.org/constructor/inputPhotoLegacyFileLocation
+corefork.telegram.org/constructor/inputPollAnswer
 corefork.telegram.org/constructor/inputPrivacyKeyAbout
 corefork.telegram.org/constructor/inputPrivacyKeyAddedByPhone
 corefork.telegram.org/constructor/inputPrivacyKeyBirthday
@@ -6910,6 +6915,7 @@ corefork.telegram.org/constructor/messageActionGroupCall
 corefork.telegram.org/constructor/messageActionGroupCallScheduled
 corefork.telegram.org/constructor/messageActionHistoryClear
 corefork.telegram.org/constructor/messageActionInviteToGroupCall
+corefork.telegram.org/constructor/messageActionManagedBotCreated
 corefork.telegram.org/constructor/messageActionNewCreatorPending
 corefork.telegram.org/constructor/messageActionNoForwardsRequest
 corefork.telegram.org/constructor/messageActionNoForwardsToggle
@@ -6920,6 +6926,8 @@ corefork.telegram.org/constructor/messageActionPaymentSent
 corefork.telegram.org/constructor/messageActionPaymentSentMe
 corefork.telegram.org/constructor/messageActionPhoneCall
 corefork.telegram.org/constructor/messageActionPinMessage
+corefork.telegram.org/constructor/messageActionPollAppendAnswer
+corefork.telegram.org/constructor/messageActionPollDeleteAnswer
 corefork.telegram.org/constructor/messageActionPrizeStars
 corefork.telegram.org/constructor/messageActionRequestedPeer
 corefork.telegram.org/constructor/messageActionRequestedPeerSentMe
@@ -6952,6 +6960,9 @@ corefork.telegram.org/constructor/messageEntityBotCommand
 corefork.telegram.org/constructor/messageEntityCashtag
 corefork.telegram.org/constructor/messageEntityCode
 corefork.telegram.org/constructor/messageEntityCustomEmoji
+corefork.telegram.org/constructor/messageEntityDiffDelete
+corefork.telegram.org/constructor/messageEntityDiffInsert
+corefork.telegram.org/constructor/messageEntityDiffReplace
 corefork.telegram.org/constructor/messageEntityEmail
 corefork.telegram.org/constructor/messageEntityFormattedDate
 corefork.telegram.org/constructor/messageEntityHashtag
@@ -7022,6 +7033,7 @@ corefork.telegram.org/constructor/messages.chatInviteImporters
 corefork.telegram.org/constructor/messages.chats
 corefork.telegram.org/constructor/messages.chatsSlice
 corefork.telegram.org/constructor/messages.checkedHistoryImportPeer
+corefork.telegram.org/constructor/messages.composedMessageWithAI
 corefork.telegram.org/constructor/messages.dhConfig
 corefork.telegram.org/constructor/messages.dhConfigNotModified
 corefork.telegram.org/constructor/messages.dialogFilters
@@ -7315,6 +7327,7 @@ corefork.telegram.org/constructor/reportResultChooseOption
 corefork.telegram.org/constructor/reportResultReported
 corefork.telegram.org/constructor/requestPeerTypeBroadcast
 corefork.telegram.org/constructor/requestPeerTypeChat
+corefork.telegram.org/constructor/requestPeerTypeCreateBot
 corefork.telegram.org/constructor/requestPeerTypeUser
 corefork.telegram.org/constructor/requestedPeerChannel
 corefork.telegram.org/constructor/requestedPeerChat
@@ -7607,6 +7620,7 @@ corefork.telegram.org/constructor/updateInlineBotCallbackQuery
 corefork.telegram.org/constructor/updateLangPack
 corefork.telegram.org/constructor/updateLangPackTooLong
 corefork.telegram.org/constructor/updateLoginToken
+corefork.telegram.org/constructor/updateManagedBot
 corefork.telegram.org/constructor/updateMessageExtendedMedia
 corefork.telegram.org/constructor/updateMessageID
 corefork.telegram.org/constructor/updateMessagePoll
@@ -7918,8 +7932,11 @@ corefork.telegram.org/method/bots.allowSendMessage
 corefork.telegram.org/method/bots.answerWebhookJSONQuery
 corefork.telegram.org/method/bots.canSendMessage
 corefork.telegram.org/method/bots.checkDownloadFileParams
+corefork.telegram.org/method/bots.checkUsername
+corefork.telegram.org/method/bots.createBot
 corefork.telegram.org/method/bots.deletePreviewMedia
 corefork.telegram.org/method/bots.editPreviewMedia
+corefork.telegram.org/method/bots.exportBotToken
 corefork.telegram.org/method/bots.getAdminedBots
 corefork.telegram.org/method/bots.getBotCommands
 corefork.telegram.org/method/bots.getBotInfo
@@ -7928,9 +7945,11 @@ corefork.telegram.org/method/bots.getBotRecommendations
 corefork.telegram.org/method/bots.getPopularAppBots
 corefork.telegram.org/method/bots.getPreviewInfo
 corefork.telegram.org/method/bots.getPreviewMedias
+corefork.telegram.org/method/bots.getRequestedWebViewButton
 corefork.telegram.org/method/bots.invokeWebViewCustomMethod
 corefork.telegram.org/method/bots.reorderPreviewMedias
 corefork.telegram.org/method/bots.reorderUsernames
+corefork.telegram.org/method/bots.requestWebViewButton
 corefork.telegram.org/method/bots.resetBotCommands
 corefork.telegram.org/method/bots.sendCustomRequest
 corefork.telegram.org/method/bots.setBotBroadcastDefaultAdminRights
@@ -8090,6 +8109,7 @@ corefork.telegram.org/method/langpack.getStrings
 corefork.telegram.org/method/messages.acceptEncryption
 corefork.telegram.org/method/messages.acceptUrlAuth
 corefork.telegram.org/method/messages.addChatUser
+corefork.telegram.org/method/messages.addPollAnswer
 corefork.telegram.org/method/messages.appendTodoList
 corefork.telegram.org/method/messages.checkChatInvite
 corefork.telegram.org/method/messages.checkHistoryImport
@@ -8100,6 +8120,7 @@ corefork.telegram.org/method/messages.clearAllDrafts
 corefork.telegram.org/method/messages.clearRecentReactions
 corefork.telegram.org/method/messages.clearRecentStickers
 corefork.telegram.org/method/messages.clickSponsoredMessage
+corefork.telegram.org/method/messages.composeMessageWithAI
 corefork.telegram.org/method/messages.createChat
 corefork.telegram.org/method/messages.createForumTopic
 corefork.telegram.org/method/messages.declineUrlAuth
@@ -8110,6 +8131,7 @@ corefork.telegram.org/method/messages.deleteFactCheck
 corefork.telegram.org/method/messages.deleteHistory
 corefork.telegram.org/method/messages.deleteMessages
 corefork.telegram.org/method/messages.deletePhoneCallHistory
+corefork.telegram.org/method/messages.deletePollAnswer
 corefork.telegram.org/method/messages.deleteQuickReplyMessages
 corefork.telegram.org/method/messages.deleteQuickReplyShortcut
 corefork.telegram.org/method/messages.deleteRevokedExportedChatInvites
@@ -8223,6 +8245,7 @@ corefork.telegram.org/method/messages.getStickers
 corefork.telegram.org/method/messages.getSuggestedDialogFilters
 corefork.telegram.org/method/messages.getTopReactions
 corefork.telegram.org/method/messages.getUnreadMentions
+corefork.telegram.org/method/messages.getUnreadPollVotes
 corefork.telegram.org/method/messages.getUnreadReactions
 corefork.telegram.org/method/messages.getWebPage
 corefork.telegram.org/method/messages.getWebPagePreview
@@ -8242,6 +8265,7 @@ corefork.telegram.org/method/messages.readFeaturedStickers
 corefork.telegram.org/method/messages.readHistory
 corefork.telegram.org/method/messages.readMentions
 corefork.telegram.org/method/messages.readMessageContents
+corefork.telegram.org/method/messages.readPollVotes
 corefork.telegram.org/method/messages.readReactions
 corefork.telegram.org/method/messages.readSavedHistory
 corefork.telegram.org/method/messages.receivedMessages
@@ -8254,7 +8278,9 @@ corefork.telegram.org/method/messages.reorderStickerSets
 corefork.telegram.org/method/messages.report
 corefork.telegram.org/method/messages.reportEncryptedSpam
 corefork.telegram.org/method/messages.reportMessagesDelivery
+corefork.telegram.org/method/messages.reportMusicListen
 corefork.telegram.org/method/messages.reportReaction
+corefork.telegram.org/method/messages.reportReadMetrics
 corefork.telegram.org/method/messages.reportSpam
 corefork.telegram.org/method/messages.reportSponsoredMessage
 corefork.telegram.org/method/messages.requestAppWebView
@@ -8728,6 +8754,7 @@ corefork.telegram.org/type/InputGroupCall
 corefork.telegram.org/type/InputInvoice
 corefork.telegram.org/type/InputMedia
 corefork.telegram.org/type/InputMessage
+corefork.telegram.org/type/InputMessageReadMetric
 corefork.telegram.org/type/InputNotifyPeer
 corefork.telegram.org/type/InputPasskeyCredential
 corefork.telegram.org/type/InputPasskeyResponse
@@ -8991,8 +9018,10 @@ corefork.telegram.org/type/auth.PasswordRecovery
 corefork.telegram.org/type/auth.SentCode
 corefork.telegram.org/type/auth.SentCodeType
 corefork.telegram.org/type/bots.BotInfo
+corefork.telegram.org/type/bots.ExportedBotToken
 corefork.telegram.org/type/bots.PopularAppBots
 corefork.telegram.org/type/bots.PreviewInfo
+corefork.telegram.org/type/bots.RequestedButton
 corefork.telegram.org/type/bytes
 corefork.telegram.org/type/channels.AdminLogResults
 corefork.telegram.org/type/channels.ChannelParticipant
@@ -9052,6 +9081,7 @@ corefork.telegram.org/type/messages.ChatFull
 corefork.telegram.org/type/messages.ChatInviteImporters
 corefork.telegram.org/type/messages.Chats
 corefork.telegram.org/type/messages.CheckedHistoryImportPeer
+corefork.telegram.org/type/messages.ComposedMessageWithAI
 corefork.telegram.org/type/messages.DhConfig
 corefork.telegram.org/type/messages.DialogFilters
 corefork.telegram.org/type/messages.Dialogs
