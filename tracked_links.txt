@@ -7779,7 +7779,6 @@ corefork.telegram.org/js/jquery-ui.min.js
 corefork.telegram.org/js/jquery.min.js
 corefork.telegram.org/js/main.js
 corefork.telegram.org/js/telegram-passport2.js
-corefork.telegram.org/messageEntityEmail/messageEntityEmail
 corefork.telegram.org/method/account.acceptAuthorization
 corefork.telegram.org/method/account.addNoPaidMessagesException
 corefork.telegram.org/method/account.cancelPasswordEmail
@@ -8124,7 +8123,6 @@ corefork.telegram.org/method/messages.clearRecentReactions
 corefork.telegram.org/method/messages.clearRecentStickers
 corefork.telegram.org/method/messages.clickSponsoredMessage
 corefork.telegram.org/method/messages.composeMessageWithAI
-corefork.telegram.org/method/messages.composedMessageWithAI
 corefork.telegram.org/method/messages.createChat
 corefork.telegram.org/method/messages.createForumTopic
 corefork.telegram.org/method/messages.declineUrlAuth
