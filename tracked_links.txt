@@ -6063,6 +6063,7 @@ corefork.telegram.org/api/bots/referrals
 corefork.telegram.org/api/bots/verification
 corefork.telegram.org/api/bots/webapps
 corefork.telegram.org/api/business
+corefork.telegram.org/api/calls
 corefork.telegram.org/api/channel
 corefork.telegram.org/api/colors
 corefork.telegram.org/api/config
