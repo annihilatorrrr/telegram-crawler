@@ -6128,6 +6128,7 @@ corefork.telegram.org/api/privacy
 corefork.telegram.org/api/profile
 corefork.telegram.org/api/push-updates
 corefork.telegram.org/api/qr-login
+corefork.telegram.org/api/rank
 corefork.telegram.org/api/reactions
 corefork.telegram.org/api/recent-actions
 corefork.telegram.org/api/recommend
