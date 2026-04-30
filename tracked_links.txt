@@ -6146,6 +6146,7 @@ corefork.telegram.org/api/stickers
 corefork.telegram.org/api/stories
 corefork.telegram.org/api/subscriptions
 corefork.telegram.org/api/suggested-posts
+corefork.telegram.org/api/tag
 corefork.telegram.org/api/takeout
 corefork.telegram.org/api/terms
 corefork.telegram.org/api/themes
