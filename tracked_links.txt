@@ -6045,6 +6045,7 @@ corefork.telegram.org/api/age-verification
 corefork.telegram.org/api/ai
 corefork.telegram.org/api/animated-emojis
 corefork.telegram.org/api/antispam
+corefork.telegram.org/api/auctions
 corefork.telegram.org/api/auth
 corefork.telegram.org/api/block
 corefork.telegram.org/api/boost
